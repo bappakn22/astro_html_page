@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrology Insights</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1a1a40, #3b2f63);
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ffd369;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .zodiac-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 30px;
+    }
+    .zodiac-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .zodiac-card:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌌 Astrology Insights</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Horoscope</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <h2>Choose Your Zodiac Sign</h2>
+  <div class="zodiac-container">
+    <div class="zodiac-card" onclick="showHoroscope('Aries')">♈ Aries</div>
+    <div class="zodiac-card" onclick="showHoroscope('Taurus')">♉ Taurus</div>
+    <div class="zodiac-card" onclick="showHoroscope('Gemini')">♊ Gemini</div>
+    <div class="zodiac-card" onclick="showHoroscope('Cancer')">♋ Cancer</div>
+    <div class="zodiac-card" onclick="showHoroscope('Leo')">♌ Leo</div>
+    <div class="zodiac-card" onclick="showHoroscope('Virgo')">♍ Virgo</div
